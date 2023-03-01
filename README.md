@@ -5,6 +5,7 @@ The objective of this project is to develop an interactive simulation of a footb
 The updates will be written the following: 0.0.0 -> This refers to global update, branch, version.
 
 # Classes
-                          - Team           
-                          - Player
-    - Defender          - Goalkeeper             - Attacker 
+Levels                      Class name
+1.                          - Team           
+2.                          - Player
+3.    - Defender          - Goalkeeper             - Attacker 
