@@ -1,7 +1,7 @@
 class Player:
-    def __init__(self, start_pos):
+    def __init__(self, startPos):
         self.velocity = 0.0
-        self.position = (start_pos.x, start_pos.y)
+        self.position = (startPos.x, startPos.y)
         self.role = "None"
         
         
