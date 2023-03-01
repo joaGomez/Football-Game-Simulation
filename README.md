@@ -6,6 +6,6 @@ The updates will be written the following: 0.0.0 -> This refers to global update
 
 # Classes
 Levels                      Class name
-1.                          - Team           
-2.                          - Player
-3.     - Defender         - Goalkeeper           - Attacker 
+1.                          - Team                              |           - Game
+2.                          - Player                            |           - Render
+3.     - Defender         - Goalkeeper           - Attacker     |
