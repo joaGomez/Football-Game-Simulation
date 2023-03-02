@@ -16,25 +16,52 @@ class Game:
         self.players = nPlayers             # Numbers of players in each team
         self.state = States.INIT.value      # Game state
         
+        pygame.init()                       # Inits graphic module
+        self.window = pygame.display.set_mode((self.windowWidth, self.windowHeight))    # Sets screen size
+
+        os.chdir('Images/')     # Sets current directory folder Images -> Upload images
+        self.image = pygame.image.load('soccer-tactic-board.png')
+        
+        self.initTeams()
+        
+        
+        
+        os.chdir('../')         # Goes back to starter directory
+        
+    def initTeams(self):
+        team0 = Team("Barcelona", 0, self.players, BLUE, BARCELONA_BADGE)        
+        
+        
+        
+        self.teams = [team0]
+        
     def initGame(self):
-        pygame.init()
-        self.window = pygame.display.set_mode((self.windowWidth, self.windowHeight))
         self.state = States.RUN.value
         self.window.fill(BLACK)
         self.clock = pygame.time.Clock()
+        
         
     def update(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.state = States.END.value
+    
+    def renderMap(self):
+        self.window.blit(self.image, (0,0))
                     
     def render(self):
         self.window.fill(BLACK)
         
+        self.renderMap()
+        
         pygame.display.flip()
+    
+    
         
     def endGame(self):
         pygame.quit()
+        
+    
         
         
         

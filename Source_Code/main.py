@@ -5,6 +5,9 @@ if __name__ == '__main__':
 
     newGame = Game(800, 1200, 5)
     
+    newGame.initTeams()
+    
+    
     newGame.initGame()
     
     while(newGame.state == States.RUN.value):

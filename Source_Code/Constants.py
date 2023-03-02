@@ -8,12 +8,24 @@ from pygame.locals import *
 
 
 #-------------------------
+#       BADGES
+#-------------------------
+
+BARCELONA_BADGE = "barca_badge.jpg"
+
+
+
+
+
+
+#-------------------------
 #       COLORS
 #-------------------------
 
 
 LIGHT_BLUE = (0,247,250)
 GREEN = (60,220,60)
+BLUE = (0,0,128)
 BLACK = (0,0,0)
 WHITE = (255,255,255)
 RED = (200,0,0)
