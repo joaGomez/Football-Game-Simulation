@@ -1,4 +1,4 @@
-from Player import Player
+from Player import *
 
 class Team:
     def __init__(self, teamID, nPlayers, teamColor):

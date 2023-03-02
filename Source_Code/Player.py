@@ -1,3 +1,5 @@
+from Constants import *
+
 class Player:
     def __init__(self, startPos):
         self.velocity = 0.0
