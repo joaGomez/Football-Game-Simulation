@@ -7,11 +7,15 @@ from pygame.locals import *
 
 
 
+
+SURFACE = (1200, 800)
+
+
 #-------------------------
 #       BADGES
 #-------------------------
 
-BARCELONA_BADGE = "barca_badge.jpg"
+BARCELONA_BADGE = "Barcelona-Badge.png"
 
 
 

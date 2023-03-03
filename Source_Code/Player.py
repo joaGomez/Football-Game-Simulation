@@ -1,10 +1,12 @@
 from Constants import *
 
 class Player:
-    def __init__(self, startPos):
+    def __init__(self, startPos, role):
         self.velocity = 0.0
-        self.position = (startPos.x, startPos.y)
-        self.role = "None"
+        self.position = startPos
+        self.role = role
+        
+        
         
         
     def move(self, direction):
